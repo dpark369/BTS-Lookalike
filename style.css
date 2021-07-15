@@ -1,40 +1,14 @@
 HTML CSS JS Result Skip Results Iframe body {
 	font-family: sans-serif;
-	background-color: #eeeeee;
+	background-color: #fff;
 }
 
 .file-upload {
-	background-color: #ffffff;
-	width: 600px;
+	padding: 3% 3%;
 	margin: 0 auto;
-	padding: 20px;
-}
-
-.file-upload-btn {
-	width: 100%;
-	margin: 0;
-	color: #fff;
-	background: #1fb264;
-	border: none;
-	padding: 10px;
-	border-radius: 4px;
-	border-bottom: 4px solid #15824b;
-	transition: all 0.2s ease;
-	outline: none;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-.file-upload-btn:hover {
-	background: #1aa059;
-	color: #ffffff;
-	transition: all 0.2s ease;
-	cursor: pointer;
-}
-
-.file-upload-btn:active {
-	border: 0;
-	transition: all 0.2s ease;
+	border-radius: 10px;
+	border: solid 1.5px #f6f7fa;
+	background-color: #fff;
 }
 
 .file-upload-content {
@@ -54,15 +28,26 @@ HTML CSS JS Result Skip Results Iframe body {
 }
 
 .image-upload-wrap {
-	margin-top: 20px;
-	border: 4px dashed #1fb264;
+	width: 60%;
+	margin: 0 auto;
 	position: relative;
+	object-fit: contain;
+
+	border-radius: 10px;
+
+	border: dashed 1.5px #35465d;
+
+	background-color: var(--white);
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-	background-color: #1fb264;
-	border: 4px dashed #ffffff;
+	background-color: #5b417a;
+	border: 1.5px dashed #ffffff;
+}
+
+.image-upload-wrap:hover > .drag-text h3 {
+	color: #fff;
 }
 
 .image-title-wrap {
@@ -77,13 +62,15 @@ HTML CSS JS Result Skip Results Iframe body {
 .drag-text h3 {
 	font-weight: 100;
 	text-transform: uppercase;
-	color: #15824b;
+	color: #5b417a;
 	padding: 60px 0;
+	font-size: 1.5rem;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .file-upload-image {
-	max-height: 200px;
-	max-width: 200px;
+	width: 40%;
 	margin: auto;
 	padding: 20px;
 }
@@ -92,11 +79,11 @@ HTML CSS JS Result Skip Results Iframe body {
 	width: 200px;
 	margin: 0;
 	color: #fff;
-	background: #cd4535;
+	background: #5b417a;
 	border: none;
 	padding: 10px;
 	border-radius: 4px;
-	border-bottom: 4px solid #b02818;
+	border-bottom: 4px solid #808080;
 	transition: all 0.2s ease;
 	outline: none;
 	text-transform: uppercase;
@@ -104,7 +91,7 @@ HTML CSS JS Result Skip Results Iframe body {
 }
 
 .remove-image:hover {
-	background: #c13b2a;
+	background: #825daf;
 	color: #ffffff;
 	transition: all 0.2s ease;
 	cursor: pointer;
@@ -113,4 +100,41 @@ HTML CSS JS Result Skip Results Iframe body {
 .remove-image:active {
 	border: 0;
 	transition: all 0.2s ease;
+}
+
+.navbar-light .navbar-toggler {
+	border-color: #fff;
+}
+
+.title {
+	font-family: 'Zen Loop', cursive;
+	font-size: 3.5rem;
+}
+
+@media screen and (max-width: 625px) {
+	html {
+		font-size: 10px;
+	}
+	#logoImg {
+		width: 140px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 8px;
+	}
+	#logoImg {
+		width: 100px;
+	}
+	.drag-text h3 {
+		padding: 30px 0;
+	}
+	.remove-image {
+		width: 100px;
+	}
+}
+
+.upload {
+	width: 20%;
 }
