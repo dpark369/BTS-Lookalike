@@ -23,13 +23,42 @@ async function init() {
 	}
 }
 
-window.onload = init();
-
 // run the webcam image through the image model
 async function predict() {
 	// predict can take in an image, video or canvas html element
 	let image = document.getElementById('face-image');
 	const prediction = await model.predict(image, false);
+	prediction.sort(
+		(a, b) => parseFloat(b.probability) - parseFloat(a.probability)
+	);
+	console.log(prediction[0].className);
+	let resultMessage;
+	switch (prediction[0].className) {
+		case 'RM':
+			resultMessage = 'RM';
+			break;
+		case 'J-Hope':
+			resultMessage = 'J-Hope';
+			break;
+		case 'V':
+			resultMessage = 'V';
+			break;
+		case 'Jungkook':
+			resultMessage = 'Jungkook';
+			break;
+		case 'Suga':
+			resultMessage = 'Suga';
+			break;
+		case 'Jin':
+			resultMessage = 'Jin';
+			break;
+		case 'Jimin':
+			resultMessage = 'Jimin';
+			break;
+		default:
+			resultMessage = 'error';
+	}
+	$('.result-message').html(resultMessage);
 	for (let i = 0; i < maxPredictions; i++) {
 		const classPrediction =
 			prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
