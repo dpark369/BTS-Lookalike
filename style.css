@@ -4,10 +4,10 @@ HTML CSS JS Result Skip Results Iframe body {
 }
 
 .file-upload {
-	padding: 3% 3%;
+	padding: 0 3%;
 	margin: 0 auto;
 	border-radius: 10px;
-	border: solid 1.5px #f6f7fa;
+	border: solid 1.5px #fff;
 	background-color: #fff;
 }
 
@@ -70,9 +70,10 @@ HTML CSS JS Result Skip Results Iframe body {
 }
 
 .file-upload-image {
-	width: 40%;
+	max-height: 40%;
+	max-width: 40%;
 	margin: auto;
-	padding: 20px;
+	padding: 10px;
 }
 
 .remove-image {
@@ -134,6 +135,12 @@ HTML CSS JS Result Skip Results Iframe body {
 		width: 100px;
 	}
 }
+@media screen and (min-width: 600px) {
+	.file-upload-image {
+		max-width: 300px;
+		max-height: 300px;
+	}
+}
 
 .upload {
 	width: 20%;
@@ -143,128 +150,128 @@ HTML CSS JS Result Skip Results Iframe body {
 .bar-container {
 	height: 2.7rem;
 }
-.rm-box {
+.RM-box {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
 	width: 100%;
-	background-color: rgba(117, 204, 84, 0.2);
+	background-color: rgba(40, 169, 223, 0.2);
 }
-.rm-bar {
+.RM-bar {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
-	background-color: rgba(117, 204, 84, 1);
+	background-color: rgb(40, 169, 223);
 }
-.suga-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(117, 204, 84, 0.2);
-}
-.suga-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(117, 204, 84, 1);
-}
-.jhope-box {
+.Suga-box {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
 	width: 100%;
-	background-color: rgba(27, 175, 234, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);
 }
-.jhope-bar {
+.Suga-bar {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
-	background-color: rgba(27, 175, 234, 1);
+	background-color: rgba(0, 0, 0, 1);
 }
-.jin-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(251, 176, 59, 0.2);
-}
-.jin-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(251, 176, 59, 1);
-}
-.jimin-box {
+.J-Hope-box {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
 	width: 100%;
-	background-color: rgba(195, 140, 102, 0.2);
+	background-color: rgba(236, 26, 42, 0.2);
 }
-.jimin-bar {
+.J-Hope-bar {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
-	background-color: rgba(195, 140, 102, 1);
+	background-color: rgb(236, 26, 42);
 }
-.v-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(49, 132, 155, 0.2);
-}
-.v-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(49, 132, 155, 1);
-}
-.jungkook-box {
+.Jin-box {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
 	width: 100%;
-	background-color: rgba(235, 166, 190, 0.2);
+	background-color: rgba(242, 2, 231, 0.2);
 }
-.jungkook-bar {
+.Jin-bar {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
-	background-color: rgba(235, 166, 190, 1);
+	background-color: rgb(242, 2, 231);
+}
+.Jimin-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(255, 215, 0, 0.2);
+}
+.Jimin-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(255, 215, 0);
+}
+.V-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(14, 130, 44, 0.2);
+}
+.V-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(14, 130, 44);
+}
+.Jungkook-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(101, 45, 142, 0.2);
+}
+.Jungkook-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgb(101, 45, 142);
 }
 .percent-text {
 	font-size: 1rem;
-	color: #ffffff;
+	color: silver;
 }
 .bts-label {
 	width: 20%;
@@ -282,52 +289,30 @@ HTML CSS JS Result Skip Results Iframe body {
 .bts-explain {
 	font-size: 1.5rem;
 }
-.rm-bts-title {
-	color: #3ba363;
+.RM-bts-title {
+	color: rgb(40, 169, 223);
 }
-.rm-bts-celeb {
-	color: #3ba363;
-	font-size: 1.2rem;
+
+.Suga-bts-title {
+	color: rgb(0, 0, 0);
 }
-.suga-bts-title {
-	color: #3ba363;
+
+.J-Hope-bts-title {
+	color: rgb(236, 26, 42);
 }
-.suga-bts-celeb {
-	color: #3ba363;
-	font-size: 1.2rem;
+
+.Jin-bts-title {
+	color: rgb(242, 2, 231);
 }
-.jhope-bts-title {
-	color: #ff6c0a;
+
+.Jimin-bts-title {
+	color: rgb(255, 215, 0);
 }
-.jhope-bts-celeb {
-	color: #ff6c0a;
-	font-size: 1.2rem;
+
+.V-bts-title {
+	color: rgb(14, 130, 44);
 }
-.jin-bts-title {
-	color: #548dd4;
-}
-.jin-bts-celeb {
-	color: #548dd4;
-	font-size: 1.2rem;
-}
-.jimin-bts-title {
-	color: #e56995;
-}
-.jimin-bts-celeb {
-	color: #e56995;
-	font-size: 1.2rem;
-}
-.v-bts-title {
-	color: #9b6b43;
-}
-.v-bts-celeb {
-	color: #9b6b43;
-	font-size: 1.2rem;
-}
-.jungkook-bts-title {
-	color: #31849b;
-}
-.jungkook-bts-celeb {
-	color: #31849b;
-	font-size: 1.2rem;
+
+.Jungkook-bts-title {
+	color: rgb(101, 45, 142);
 }

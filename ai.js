@@ -81,6 +81,7 @@ async function predict() {
 		resultTitle +
 		'</div>';
 	let explain = "<div class='bts-explain pt-2'>" + resultExplain + '</div>';
+	$('.result-message').html(title + explain);
 	let barWidth;
 	for (let i = 0; i < maxPredictions; i++) {
 		if (prediction[i].probability.toFixed(2) > 0.1) {
@@ -90,7 +91,7 @@ async function predict() {
 		} else {
 			barWidth = '2%';
 		}
-		var labelTitle;
+		let labelTitle;
 		switch (prediction[i].className) {
 			case 'RM':
 				labelTitle = 'RM';
@@ -116,11 +117,11 @@ async function predict() {
 			default:
 				labelTitle = 'Error';
 		}
-		var label =
+		let label =
 			"<div class='bts-label d-flex align-items-center'>" +
 			labelTitle +
 			'</div>';
-		var bar =
+		let bar =
 			"<div class='bar-container position-relative container'><div class='" +
 			prediction[i].className +
 			"-box'></div><div class='d-flex justify-content-center align-items-center " +

@@ -18,71 +18,80 @@
 			href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap"
 			rel="stylesheet"
 		/>
+		
 
 		<link rel="stylesheet" href="style.css" />
+		<!-- Tools for sharing -->
+		<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60f5da77e4f8e2c0"></script> 
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#"
-					><img id="logoImg" src="./img/logo.png" alt="logo"
-				/></a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item ms-auto">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item ms-auto">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item dropdown ms-auto">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Dropdown
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><hr class="dropdown-divider" /></li>
-								<li>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item ms-auto">
-							<a
-								class="nav-link disabled"
-								href="#"
-								tabindex="-1"
-								aria-disabled="true"
-								>Disabled</a
-							>
-						</li>
-					</ul>
-				</div>
+		<nav class="p-3 navbar container navbar-light">
+			<a class="navbar-brand" href="#"
+				><img id="logoImg" src="./img/logo.png" alt="logo"
+			/></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item ms-auto">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item ms-auto">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown ms-auto">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item ms-auto">
+						<a
+							class="nav-link disabled"
+							href="#"
+							tabindex="-1"
+							aria-disabled="true"
+							>Disabled</a
+						>
+					</li>
+				</ul>
 			</div>
 		</nav>
 		<!-- Header -->
-		<section>
+		<section class="title">
 			<h1 class="title text-center">Which BTS member do you most look like?</h1>
+			<h2 class="visually-hidden">
+				Find out which BTS member you look like!
+			</h2>
+			<h3 class="visually-hidden">
+				With BTS image data and AI, this app will find which member you look like the most.
+			</h3>
+			<h4 class="visually-hidden">
+				This app was made based on Google's AI, teachable  machine 2.0.
 		</section>
 
 		<!-- Image upload from codepen. Credit below body-->
@@ -113,16 +122,19 @@
 				/>
 				<div id="loading" class="animated bounce">
 					<div class="spinner-border" role="status">
-						<span class="sr-only">Loading...</span>
+						<span class="visually-hidden">Loading...</span>
 					</div>
-					<p class="text-center">Analyzing your face</p>
+					<p class="text-center">Analyzing your image.</p>
 				</div>
 				<p class="result-message"></p>
 				<div
 					id="label-container"
 					class="d-flex flex-column justify-content-around"
 				></div>
-				<div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+		
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
 				<div class="image-title-wrap">
 					<button type="button" onclick="removeUpload()" class="remove-image">
 						Try Again
@@ -130,16 +142,19 @@
 				</div>
 			</div>
 		</div>
+		
+
+		<!-- For teachable machine -->
+		<!-- <div id="webcam-container"></div> -->
+
+		<div class="container pt-3">
+			<div id="disqus_thread"></div>
+		</div>
 		<footer class="footer pt-5 container d-flex justify-content-center">
 			<div>
 				<p>&copy; Daniel Park 2021. All Rights Reserved.</p>
 			</div>
 		</footer>
-
-		<!-- For teachable machine -->
-		<div id="webcam-container"></div>
-
-		<div id="disqus_thread"></div>
 		<script>
 			/**
 			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -175,6 +190,7 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		
 	</body>
 	<!-- 
 Image upload from Codepen		

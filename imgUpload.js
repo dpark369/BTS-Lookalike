@@ -1,19 +1,19 @@
 function readURL(input) {
 	if (input.files && input.files[0]) {
-		var reader = new FileReader();
+		let reader = new FileReader();
 
 		reader.onload = function (e) {
 			$('.image-upload-wrap').hide();
-
+			$('#loading').show();
 			$('.file-upload-image').attr('src', e.target.result);
 			$('.file-upload-content').show();
-
 			$('.image-title').html(input.files[0].name);
 		};
 
 		reader.readAsDataURL(input.files[0]);
 		init().then(() => {
 			predict();
+			$('#loading').hide();
 		});
 	} else {
 		removeUpload();
