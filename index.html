@@ -111,15 +111,30 @@
 					src="#"
 					alt="your image"
 				/>
+				<div id="loading" class="animated bounce">
+					<div class="spinner-border" role="status">
+						<span class="sr-only">Loading...</span>
+					</div>
+					<p class="text-center">Analyzing your face</p>
+				</div>
 				<p class="result-message"></p>
-				<div id="label-container"></div>
+				<div
+					id="label-container"
+					class="d-flex flex-column justify-content-around"
+				></div>
+				<div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
 				<div class="image-title-wrap">
 					<button type="button" onclick="removeUpload()" class="remove-image">
-						Remove <span class="image-title">Uploaded Image</span>
+						Try Again
 					</button>
 				</div>
 			</div>
 		</div>
+		<footer class="footer pt-5 container d-flex justify-content-center">
+			<div>
+				<p>&copy; Daniel Park 2021. All Rights Reserved.</p>
+			</div>
+		</footer>
 
 		<!-- For teachable machine -->
 		<div id="webcam-container"></div>

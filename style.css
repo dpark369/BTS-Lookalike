@@ -138,3 +138,196 @@ HTML CSS JS Result Skip Results Iframe body {
 .upload {
 	width: 20%;
 }
+
+/* Styles for the graphs */
+.bar-container {
+	height: 2.7rem;
+}
+.rm-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(117, 204, 84, 0.2);
+}
+.rm-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(117, 204, 84, 1);
+}
+.suga-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(117, 204, 84, 0.2);
+}
+.suga-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(117, 204, 84, 1);
+}
+.jhope-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.jhope-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.jin-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(251, 176, 59, 0.2);
+}
+.jin-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(251, 176, 59, 1);
+}
+.jimin-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(195, 140, 102, 0.2);
+}
+.jimin-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(195, 140, 102, 1);
+}
+.v-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(49, 132, 155, 0.2);
+}
+.v-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(49, 132, 155, 1);
+}
+.jungkook-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(235, 166, 190, 0.2);
+}
+.jungkook-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(235, 166, 190, 1);
+}
+.percent-text {
+	font-size: 1rem;
+	color: #ffffff;
+}
+.bts-label {
+	width: 20%;
+	text-align: left;
+	height: 2rem;
+}
+#label-container {
+	width: 80%;
+	margin: 0 auto;
+}
+.result-message {
+	font-size: 2rem;
+}
+
+.bts-explain {
+	font-size: 1.5rem;
+}
+.rm-bts-title {
+	color: #3ba363;
+}
+.rm-bts-celeb {
+	color: #3ba363;
+	font-size: 1.2rem;
+}
+.suga-bts-title {
+	color: #3ba363;
+}
+.suga-bts-celeb {
+	color: #3ba363;
+	font-size: 1.2rem;
+}
+.jhope-bts-title {
+	color: #ff6c0a;
+}
+.jhope-bts-celeb {
+	color: #ff6c0a;
+	font-size: 1.2rem;
+}
+.jin-bts-title {
+	color: #548dd4;
+}
+.jin-bts-celeb {
+	color: #548dd4;
+	font-size: 1.2rem;
+}
+.jimin-bts-title {
+	color: #e56995;
+}
+.jimin-bts-celeb {
+	color: #e56995;
+	font-size: 1.2rem;
+}
+.v-bts-title {
+	color: #9b6b43;
+}
+.v-bts-celeb {
+	color: #9b6b43;
+	font-size: 1.2rem;
+}
+.jungkook-bts-title {
+	color: #31849b;
+}
+.jungkook-bts-celeb {
+	color: #31849b;
+	font-size: 1.2rem;
+}
