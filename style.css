@@ -111,6 +111,12 @@ HTML CSS JS Result Skip Results Iframe body {
 	font-family: 'Zen Loop', cursive;
 	font-size: 3.5rem;
 }
+.privacy {
+	font-family: 'Zen Loop', cursive;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
 
 @media screen and (max-width: 625px) {
 	html {
