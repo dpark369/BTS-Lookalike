@@ -318,6 +318,6 @@ HTML CSS JS Result Skip Results Iframe body {
 }
 
 #tipjar {
+	display: flex;
 	justify-content: center;
-	align-items: center;
 }
