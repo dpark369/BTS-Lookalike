@@ -37,38 +37,31 @@ async function predict() {
 	switch (prediction[0].className) {
 		case 'RM':
 			resultTitle = 'Kim Namjoon';
-			resultExplain =
-				'RM is the leader of BTS and he played a big part in helping Big Hit form the group that fans get to enjoy today. ';
+			resultExplain = 'You are charming and charismatic like the leader, RM.';
 			break;
 		case 'J-Hope':
 			resultTitle = 'Jung Hoseok';
-			resultExplain =
-				'J-Hope is one of the best dancers in the group, and also also a literal sunshine angel! ';
+			resultExplain = 'You shine bright like the real life angel, J-Hope ';
 			break;
 		case 'V':
 			resultTitle = 'Kim Taehyung';
-			resultExplain =
-				'V, also known as Taehyung, Tae, or TaeTae was the last member of BTS to be revealed';
+			resultExplain = 'You look like a unique piece of art like V';
 			break;
 		case 'Jungkook':
 			resultTitle = 'Jeon Jeongguk';
-			resultExplain =
-				'Jungkook is the youngest BTS member, also known as their Golden Maknae because he seems to be good at basically everything. ';
+			resultExplain = 'You are adorable like the golden maknae, Jungkook';
 			break;
 		case 'Suga':
 			resultTitle = 'Min Yoongi';
-			resultExplain =
-				'Suga is the second oldest BTS member and can often be found taking care of things for the other members. ';
+			resultExplain = 'You look cool and creative like the producer Suga';
 			break;
 		case 'Jin':
 			resultTitle = 'Kim Seokjin';
-			resultExplain =
-				'Jin is the oldest BTS member, although he doesn’t often act like it. He’s known for his dad jokes, describing himself as “Worldwide handsome” ';
+			resultExplain = 'You look amazing like "Mr World Handsome" Jin ';
 			break;
 		case 'Jimin':
 			resultTitle = 'Park Jimin';
-			resultExplain =
-				'Jimin had the shortest amount of time as a trainee before BTS debuted and almost didn’t make the cut.';
+			resultExplain = 'You look kind and sexy at the same time like Jimin';
 			break;
 		default:
 			resultTitle = 'error';
