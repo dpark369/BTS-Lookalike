@@ -118,6 +118,11 @@ HTML CSS JS Result Skip Results Iframe body {
 	justify-content: center;
 }
 
+.tipjar {
+	display: flex;
+	justify-content: center;
+}
+
 @media screen and (max-width: 625px) {
 	html {
 		font-size: 10px;
